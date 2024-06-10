@@ -1,0 +1,280 @@
+/*Colocando as fontes no arquivo*/
+@font-face {
+    font-family: 'Ovo';
+    src: url("Ovo.woff");
+}
+
+@font-face {
+    font-family: 'Poet';
+    src: url("PoetsenOne-Regular.woff");
+}
+
+
+/*Estilizando texto*/
+p{
+    font-family: 'Ovo';
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'Poet';
+    margin-bottom: 90px;
+}
+
+
+/*Barra de navegação - inicio*/
+nav{
+    background:#4682B4;
+}
+
+.logo{
+    width: 120px;
+    margin-right: 240px;
+}
+
+.nav-texto{
+    color: #fff !important;
+    font-family: 'Ovo' ;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right:5px;   
+    
+}
+
+.nav-texto:hover{
+    color: #0000ff !important;
+}
+/*Barra de navegação - fim*/
+
+
+/*inicio seção sobre*/
+#sobre{
+    margin-top: 200px;
+}
+
+#sobre p{
+    text-align: justify;
+}
+
+#sobre h2{
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo{
+    margin-right: 44px;
+    margin-left: 17px;
+}
+/*Fim seção sobre*/
+
+/*Inicio seção equipe*/
+#equipe{
+    margin-top: 200px;
+}
+
+.conteudo-equipe{
+    margin-right: 17px;
+    width: 180px;
+}
+
+.imagem-equipe{
+    width: 180px;
+    height: 315px;
+}
+
+.primeira-img{
+    margin-left: 150px ;
+}
+
+.ultima-img{
+    margin-right: 150px;
+}
+
+
+.fa-chevron-right, .fa-chevron-left{
+    color: #000;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+/*Media queries*/
+
+@media (max-width:575.98px){
+    
+
+    .sobre-conteudo{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .conteudo-equipe{
+        margin-right: 10px;
+        width: 120px;
+    }
+
+    .conteudo-equipe p{
+        font-size: 14px;
+    }
+
+    .imagem-equipe{
+        width: 120px;
+        height: 180px;
+    }
+
+    .primeira-img{
+        margin-left: 56px ;
+    }
+    
+    .ultima-img{
+        margin-right: 56px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+    
+
+    .sobre-conteudo{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .conteudo-equipe{
+        margin-right: 5px;
+        width: 125px;
+    }
+
+    .imagem-equipe{
+        width: 125px;
+        height: 200px;
+    }
+
+    .primeira-img{
+        margin-left: 56px ;
+    }
+    
+    .ultima-img{
+        margin-right: 56px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width: 991.98px){
+    .nav-texto{
+        font-size: 11px;  
+    }
+
+    .logo{
+        width: 70px;
+        margin-right: 0px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .sobre-conteudo{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .conteudo-equipe{
+        margin-right: 17px;
+        width: 120px;
+    }
+
+    .imagem-equipe{
+        width: 120px;
+        height: 255px;
+    }
+
+    .primeira-img{
+        margin-left: 80px ;
+    }
+    
+    .ultima-img{
+        margin-right: 80px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width: 1199.98px){
+    .nav-texto{
+        font-size: 14px;  
+    }
+
+    .logo{
+        width: 120px;
+        margin-right: 40px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .sobre-conteudo{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .conteudo-equipe{
+        margin-right: 17px;
+        width: 120px;
+    }
+
+    .imagem-equipe{
+        width: 120px;
+        height: 255px;
+    }
+
+    .primeira-img{
+        margin-left: 100px ;
+    }
+    
+    .ultima-img{
+        margin-right: 100px;
+    }
+
+
+
+    
+}
+
+@media (min-width:1200px) and (max-width: 1399.98px) {
+    .nav-texto{
+        font-size: 16px;
+        margin-right:3px ;   
+    }
+
+    .logo{
+        width: 120px;
+        margin-right: 160px;
+    }
+
+    .conteudo-equipe{
+        margin-right: 17px;
+        width: 150px;
+    }
+
+    .imagem-equipe{
+        width: 150px;
+        height: 285px;
+    }
+
+    .primeira-img{
+        margin-left: 100px ;
+    }
+    
+    .ultima-img{
+        margin-right: 100px;
+    }
+    
+}
