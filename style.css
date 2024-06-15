@@ -10,6 +10,8 @@
 }
 
 
+
+
 /*Estilizando texto*/
 p{
     font-family: 'Ovo';
@@ -19,11 +21,30 @@ p{
 h2{
     font-family: 'Poet';
     margin-bottom: 90px;
+    text-align: center;
+}
+
+#sobre h2{
+    text-align: left;
+}
+
+h3{
+    font-family: 'Ovo';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.galeria-texto{
+    font-size: 30px;
+    font-weight: bold ;
+    font-family: 'Ovo';
 }
 
 
+
+
 /*Barra de navegação - inicio*/
-nav{
+nav, footer{
     background:#4682B4;
 }
 
@@ -47,6 +68,14 @@ nav{
 /*Barra de navegação - fim*/
 
 
+/*Margin padrão entre seções*/
+#equipe, #aprovados, #galeria, #contato, #inscreva, footer{
+    margin-top: 200px;
+}
+
+
+
+
 /*inicio seção sobre*/
 #sobre{
     margin-top: 200px;
@@ -66,10 +95,9 @@ nav{
 }
 /*Fim seção sobre*/
 
+
+
 /*Inicio seção equipe*/
-#equipe{
-    margin-top: 200px;
-}
 
 .conteudo-equipe{
     margin-right: 17px;
@@ -78,7 +106,7 @@ nav{
 
 .imagem-equipe{
     width: 180px;
-    height: 315px;
+    height: 320px;
 }
 
 .primeira-img{
@@ -94,8 +122,91 @@ nav{
     color: #000;
     font-size: 50px;
 }
+/*FIm seção equipe*/
 
 
+
+/*Inicio seção aprovados*/
+.aprovados-img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: 0 76px;
+}
+
+.margin-entre-aprovados{
+    margin: 90px 0;
+}
+
+.margin-conteudo-aprovado-esquerda{
+    margin-left: 76px;
+}
+
+.margin-conteudo-aprovado-direita{
+    margin-right: 76px;
+}
+/*Fim seção aprovados*/
+
+
+
+/*Inicio seção galeria*/
+.galeria-img{
+    width: 400px;
+    height: 250px;
+}
+
+.margin-segunda-coluna-galeria{
+    margin-top: 90px;
+}
+/*fim seção galeria*/
+
+
+
+/*inicio seção contato*/
+.tamanho-gps{
+    width: 500px;
+    height: 400px;
+}
+/*Fim seção contato*/
+
+
+
+.btn-primary{
+    background-color: #0000ff;
+    width: 260px;
+    font-family: 'Ovo';
+    font-size: 35px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/*Inicio rodapé*/
+footer a{
+    text-decoration: none;
+}
+
+.logo-rodape{
+    width: 120px;
+}
+
+.ibilce{
+    width: 240px;
+    filter: brightness(500%);
+    margin-left: 30px;
+    
+}
+
+.img-redes-sociais{
+    fill: #fff;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.img-redes-sociais:hover{
+    fill: #0000ff;
+}
+
+/*Fim rodapé*/
 
 
 
@@ -104,7 +215,84 @@ nav{
 /*Media queries*/
 
 @media (max-width:575.98px){
+    body{
+        background-color: red;
+    }
+
+    .logo{
+        margin-right: 0px;
+    }
+
+    .sobre-conteudo{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .conteudo-equipe{
+        margin-right: 15px;
+        width: 100px;
+    }
+
+    .conteudo-equipe p {
+        font-size: 16px;
+    }
+
+    .imagem-equipe{
+        width: 100px;
+        height: 185px;
+    }
+
+    .primeira-img{
+        margin-left: 35px ;
+    }
     
+    .ultima-img{
+        margin-right: 35px;
+    }
+
+    .aprovados-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .margin-conteudo-aprovado-esquerda, .margin-conteudo-aprovado-direita{
+        margin: 40px 0;
+    }
+
+    .galeria-img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .margin-segunda-coluna-galeria{
+        margin-top: 0px;
+    }
+
+    .tamanho-gps{
+        width: 300px;
+        height: 200px;
+    }
+
+    .logo-rodape{
+        width: 80px;
+    }
+
+    .ibilce{
+        width: 200px;
+        filter: brightness(500%);
+    }
+    
+    .img-redes-sociais{
+        width: 30px;
+        margin-left: 10px;
+    }   
+
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+    body{
+        background: #f23333;
+    }
 
     .sobre-conteudo{
         margin-right: 0;
@@ -113,16 +301,12 @@ nav{
 
     .conteudo-equipe{
         margin-right: 10px;
-        width: 120px;
-    }
-
-    .conteudo-equipe p{
-        font-size: 14px;
+        width: 125px;
     }
 
     .imagem-equipe{
-        width: 120px;
-        height: 180px;
+        width: 125px;
+        height: 220px;
     }
 
     .primeira-img{
@@ -133,37 +317,28 @@ nav{
         margin-right: 56px;
     }
 
-}
-
-@media (min-width:576px) and (max-width:767.98px){
-    
-
-    .sobre-conteudo{
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .conteudo-equipe{
-        margin-right: 5px;
-        width: 125px;
-    }
-
-    .imagem-equipe{
-        width: 125px;
+    .aprovados-img{
+        width: 200px;
         height: 200px;
     }
 
-    .primeira-img{
-        margin-left: 56px ;
+    .margin-conteudo-aprovado-esquerda, .margin-conteudo-aprovado-direita{
+        margin: 40px 0;
     }
+
+    .margin-segunda-coluna-galeria{
+        margin-top: 0px;
+    }
+
     
-    .ultima-img{
-        margin-right: 56px;
-    }
+    
 
 }
 
 @media (min-width:768px) and (max-width: 991.98px){
+    body{
+        background: #0000ff;
+    }
     .nav-texto{
         font-size: 11px;  
     }
@@ -178,7 +353,7 @@ nav{
     }
 
     p{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .sobre-conteudo{
@@ -193,7 +368,7 @@ nav{
 
     .imagem-equipe{
         width: 120px;
-        height: 255px;
+        height: 215px;
     }
 
     .primeira-img{
@@ -204,9 +379,40 @@ nav{
         margin-right: 80px;
     }
 
+    .aprovados-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .margin-conteudo-aprovado-esquerda{
+        margin-left: 10px;
+    }
+    
+    .margin-conteudo-aprovado-direita{
+        margin-right: 10px;
+    }
+
+    .galeria-img{
+        width: 230px;
+        height: 170px;
+    }
+
+    .tamanho-gps{
+        width: 350px;
+        height: 250px;
+    }
+    
+
+    
+
+
 }
 
 @media (min-width:992px) and (max-width: 1199.98px){
+    body{
+        background: #00ff00;
+    }
+
     .nav-texto{
         font-size: 14px;  
     }
@@ -232,7 +438,7 @@ nav{
 
     .imagem-equipe{
         width: 120px;
-        height: 255px;
+        height: 215px;
     }
 
     .primeira-img{
@@ -243,12 +449,30 @@ nav{
         margin-right: 100px;
     }
 
+    .aprovados-img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .galeria-img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .tamanho-gps{
+        width: 400px;
+        height: 300px;
+    }
+
 
 
     
 }
 
 @media (min-width:1200px) and (max-width: 1399.98px) {
+    body{
+        background: #ffff00;
+    }
     .nav-texto{
         font-size: 16px;
         margin-right:3px ;   
@@ -260,13 +484,13 @@ nav{
     }
 
     .conteudo-equipe{
-        margin-right: 17px;
-        width: 150px;
+        margin-right: 10px;
+        width: 160px;
     }
 
     .imagem-equipe{
         width: 150px;
-        height: 285px;
+        height: 290px;
     }
 
     .primeira-img{
@@ -275,6 +499,11 @@ nav{
     
     .ultima-img{
         margin-right: 100px;
+    }
+
+    .galeria-img{
+        width: 350px;
+        height: 200px;
     }
     
 }
