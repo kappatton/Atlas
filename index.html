@@ -6,7 +6,7 @@
     <title>Cursinho Atlas</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="shortcut icon" href="logo.png">
     
 </head>
 
@@ -22,7 +22,7 @@
 
                     <img class="navbar-brand logo" src="logo.png">
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                        <i class="text-white fa-solid fa-bars"></i>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     
 
@@ -39,33 +39,33 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link nav-texto " href="">Aprovados</a>
+                                <a class="nav-link nav-texto " href="#aprovados">Aprovados</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link nav-texto " href="">Galeria</a>
+                                <a class="nav-link nav-texto " href="#galeria">Galeria</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link nav-texto" href="">Contato</a>
+                                <a class="nav-link nav-texto" href="#contato">Contato</a>
                             </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle nav-texto" href="#" id="elemento-dropdown" data-bs-toggle="dropdown">Documentos</a>
 
-                                <ul class="dropdown-menu" aria-labelledby="elemento-dropdown" style="background: #4682B4;">
+                                <ul class="dropdown-menu" style="background: #4682B4;">
                                     <li>
-                                        <a class="dropdown-item nav-texto">Calendário</a>
+                                        <a href="calendário.pdf" target="_blank" class="dropdown-item nav-texto">Calendário</a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item nav-texto">Edital</a>
+                                        <a href="edital.pdf" target="_blank" class="dropdown-item nav-texto">Edital</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link nav-texto" href="">Inscreva-se</a>
+                                <a class="nav-link nav-texto" href="https://forms.gle/5zkyisvY5a5HEAWJ7" target="_blank">Inscreva-se</a>
                             </li>
 
                         </ul>
@@ -107,11 +107,11 @@
     </section> <!--Fim quem somos-->
 
 
-    <section class="d-none d-lg-block" id="equipe"> <!--Inicio equipe telas médias e grandes-->
+    <section id="equipe"> <!--Inicio seção equipe-->
 
         <div class="container">
 
-            <h2 class="text-center h2-margin">Conheça nossa equipe!</h2>
+            <h2 class="text-center">Conheça nossa equipe!</h2>
             
             <div class="row">
 
@@ -125,15 +125,16 @@
 
                                 <div class="carousel-item active">
                                     
-                                    <div class="conteudo-equipe primeira-img d-inline-block" >
-
-                                    <img class="imagem-equipe" src="professor-1.png">
-                                    <p>Luis Enrico Franco Nepomuceno</p>
-                                    <p>Professor de redação</p>
+                                    <!--Aparece em telas grandes-->
+                                    <div class="conteudo-equipe primeira-img d-none d-lg-inline-block" >
+                                    
+                                        <img class="imagem-equipe" src="professor-1.png">
+                                        <p>Luis Enrico Franco Nepomuceno</p>
+                                        <p>Professor de redação</p>
 
                                     </div>
 
-                                    <div class="conteudo-equipe d-inline-block">
+                                    <div class="conteudo-equipe d-none d-lg-inline-block">
 
                                         <img class="imagem-equipe" src="professor-1.png">
                                         <p>Luis Enrico Franco Nepomuceno</p>
@@ -141,7 +142,7 @@
 
                                     </div>
                                     
-                                    <div class="conteudo-equipe d-inline-block">
+                                    <div class="conteudo-equipe d-none d-lg-inline-block">
 
                                         <img class="imagem-equipe" src="professor-1.png">
                                         <p>Luis Enrico Franco Nepomuceno</p>
@@ -149,43 +150,14 @@
 
                                     </div>
 
-                                    <div class="conteudo-equipe d-inline-block">
+                                    <div class="conteudo-equipe d-none d-lg-inline-block">
                                         <img class="imagem-equipe" src="professor-1.png">
                                         <p>Luis Enrico Franco Nepomuceno</p>
                                         <p>Professor de redação</p>
 
                                     </div>
 
-                                    <div class="conteudo-equipe ultima-img d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="carousel-item">
-                                    
-                                    <div class="conteudo-equipe primeira-img d-inline-block" >
-
-                                    <img class="imagem-equipe" src="professor-1.png">
-                                    <p>Luis Enrico Franco Nepomuceno</p>
-                                    <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-                                    <div class="conteudo-equipe d-inline-block">
+                                    <div class="conteudo-equipe ultima-img d-none d-lg-inline-block">
 
                                         <img class="imagem-equipe" src="professor-1.png">
                                         <p>Luis Enrico Franco Nepomuceno</p>
@@ -193,166 +165,37 @@
 
                                     </div>
 
-                                    <div class="conteudo-equipe d-inline-block">
+
+                                    <!--Aparece em telas pequenas-->
+                                    <div class="conteudo-equipe primeira-img d-inline-block d-lg-none" >
+
                                         <img class="imagem-equipe" src="professor-1.png">
                                         <p>Luis Enrico Franco Nepomuceno</p>
                                         <p>Professor de redação</p>
-
+    
                                     </div>
-
-                                    <div class="conteudo-equipe ultima-img d-inline-block">
-
+    
+                                    <div class="conteudo-equipe ultima-img d-inline-block d-lg-none">
+    
                                         <img class="imagem-equipe" src="professor-1.png">
                                         <p>Luis Enrico Franco Nepomuceno</p>
                                         <p>Professor de redação</p>
-
+    
                                     </div>
                                     
 
                                 </div>
 
-
-                                <div class="carousel-item">
-                                    
-                                    <div class="conteudo-equipe primeira-img d-inline-block" >
-
-                                    <img class="imagem-equipe" src="professor-1.png">
-                                    <p>Luis Enrico Franco Nepomuceno</p>
-                                    <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe ultima-img d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-
-                                </div>
-
-
-                                <div class="carousel-item">
-                                    
-                                    <div class="conteudo-equipe primeira-img d-inline-block" >
-
-                                    <img class="imagem-equipe" src="professor-1.png">
-                                    <p>Luis Enrico Franco Nepomuceno</p>
-                                    <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe ultima-img d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="carousel-item">
-                                    
-                                    <div class="conteudo-equipe primeira-img d-inline-block" >
-
-                                    <img class="imagem-equipe" src="professor-1.png">
-                                    <p>Luis Enrico Franco Nepomuceno</p>
-                                    <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-                                    <div class="conteudo-equipe d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe d-inline-block">
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-
-                                    <div class="conteudo-equipe ultima-img d-inline-block">
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-
-                                    </div>
-                                    
-
-                                </div>
+                            
 
                                 
                                 
                                 <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slide-equipe">
-                                    <i class="fa-solid fa-chevron-left align-self-center"></i>
+                                    <img src="chevron-left.svg" width="60px">
                                 </button>
 
                                 <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#slide-equipe">
-                                    <i class="fa-solid fa-chevron-right text-dark align-self-center"></i>
+                                    <img src="chevron-right.svg" width="60px">
                                 </button>
 
                             </div>
@@ -368,78 +211,284 @@
 
         </div>
 
-    </section> <!--Fim equipe telas grandes-->
+    </section> <!--Fim seção equipe-->
 
 
-    <section class="d-sm-block d-lg-none" id="equipe"> <!--Inicio equipe telas pequenas-->
+    <section id="aprovados"> <!--inicio seção aprovados-->
 
         <div class="container">
 
-            <h2 class="text-center h2-margin">Conheça nossa equipe!</h2>
-            
-            <div class="row">
+            <h2>Aprovados do Atlas</h2>
 
-                <div class="col-12">
+            <div class="row justify-content-center">
 
-                    <div class="d-flex justify-content-center">
+                <div class="col-4 align-self-center d-none d-md-block">
+                    <img src="aprovado-1.png" class="aprovados-img">
+                </div> 
+                
+                <div class="col-md-6 align-self-center margin-conteudo-aprovado-esquerda">
 
-                        <div id="slide-equipe" class="carousel slide" data-bs-ride="carousel">
-
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    
-                                        <div class="conteudo-equipe primeira-img d-inline-block" >
-
-                                        <img class="imagem-equipe" src="professor-1.png">
-                                        <p>Luis Enrico Franco Nepomuceno</p>
-                                        <p>Professor de redação</p>
-    
-                                        </div>
-    
-                                        <div class="conteudo-equipe d-inline-block">
-    
-                                            <img class="imagem-equipe" src="professor-1.png">
-                                            <p>Luis Enrico Franco Nepomuceno</p>
-                                            <p>Professor de redação</p>
-    
-                                        </div>
-                                        
-                                        <div class="conteudo-equipe ultima-img d-inline-block">
-    
-                                            <img class="imagem-equipe" src="professor-1.png">
-                                            <p>Luis Enrico Franco Nepomuceno</p>
-                                            <p>Professor de redação</p>
-    
-                                        </div>
-
-                                </div>
-
-                                
-                                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slide-equipe">
-                                    <i class="fa-solid fa-chevron-left align-self-center"></i>
-                                </button>
-
-                                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#slide-equipe">
-                                    <i class="fa-solid fa-chevron-right text-dark align-self-center"></i>
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </div> 
-
+                    <h3>Marcela, aprovada em ciências biológicas na UNESP</h3>
+                    <div class="text-center">
+                    <img src="aprovado-1.png" class="d-md-none aprovados-img">
+                    </div>
+                    <p style="margin: 37px 0;">Depoimento: </p>
+                    <p>“Estudar no cursinho Atlas foi uma das melhores coisas de 2022, é uma
+                        experiência única que eu recomendo demais. Os professores são didáticos, eu
+                        me senti muito confortável para fazer perguntas nas aulas, além do apoio que
+                        eles e os coordenadores sempre nos dão. Me surpreendi com a qualidade e 
+                        com certeza esse cursinho ganhou meu coração.”
+                    </p>
                 </div>
 
             </div>
 
+            <div class="row justify-content-center margin-entre-aprovados">
+
+                
+                <div class="col-md-6 align-self-center margin-conteudo-aprovado-direita">
+
+                    <h3>Leonardo, aprovado em química na UNESP</h3>
+                    <div class="text-center">
+                    <img src="aprovado-2.png" class="d-md-none aprovados-img">
+                    </div>
+                    <p style="margin: 37px 0;">Depoimento: </p>
+                    <p>“O cursinho foi uma salvação que me ajudou muito a me preparar para os
+                        vestibulares, vi matérias que ainda não tinha visto no ensino médio e
+                        reaprendi o que eu já tinha esquecido, fiz amizades que jamais me esquecerei.
+                        O cursinho Atlas foi a melhor decisão que eu fiz durante 6 meses.” 
+                    </p>
+                </div>
+
+                <div class="col-4 align-self-center d-none d-md-block">
+                    <img src="aprovado-2.png" class="aprovados-img">
+                </div> 
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-4 align-self-center d-none d-md-block">
+                    <img src="aprovado-3.png" class="aprovados-img">
+                </div> 
+                
+                <div class="col-md-6 align-self-center margin-conteudo-aprovado-esquerda">
+
+                    <h3>Karoline, aprovada em química na UNESP</h3>
+                    <div class="text-center">
+                    <img src="aprovado-3.png" class="d-md-none aprovados-img">
+                    </div>
+                    <p style="margin: 37px 0;">Depoimento: </p>
+                    <p>“O cursinho Atlas foi essencial para as minhas escolhas. O cursinho Atlas 
+                        possui professores qualificados, coordenadores excelentes e uma administração 
+                        melhor ainda! É meu segundo ano nesse cursinho e posso afirmar que ele possui 
+                        uma didática excepcional que me ajudou imensamente em todos os vestibulares que prestei.”
+                    </p>
+                </div>
+
+            </div>
 
         </div>
 
-    </section> <!--Fim equipe telas pequenas e médias-->
-
+    </section> <!--Fim seção aprovados-->
     
+    
+
+    <section id="galeria"> <!--Inicio seção galeria-->
+        
+        <div class="container justify-content-center">
+
+            <h2>Galeria</h2>
+
+            <div class="row galeria-texto">
+
+                    <div class="col-12 col-md-4">
+                        
+                        <div class="text-center text-md-start">
+
+                            <img src="galeria-1.png" class="galeria-img">
+                            <p class="mb-5">Comemoração das aprovações.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        
+                        <div class="text-center text-md-start">
+
+                            <img src="galeria-2.png" class="galeria-img">
+                            <p class="mb-5">Visita à exposição "Carolina Maria de Jesus: um Brasil para os brasileiros".</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+
+                        <div class="text-center text-md-start">
+
+                            <img src="galeria-3.png" class="galeria-img">
+                            <p class="mb-5">visita do Prof. Dr. Raul Borges Guimarães, pró-reitor de extensão e cultura da UNESP.</p>
+
+                        </div>
+
+                    </div>
+
+        
+            </div>
+
+            <div class="row galeria-texto margin-segunda-coluna-galeria">
+
+                <div class="col-12 col-md-4">
+                    
+                    <div class="text-center text-md-start">
+
+                        <img src="galeria-4.png" class="galeria-img">
+                        <p class="mb-5">Bate papo sobre cidadania e a importância do voto.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+                    
+                    <div class="text-center text-md-start">
+
+                        <img src="galeria-5.png" class="galeria-img">
+                        <p class="mb-5">Encerramento do cursinho em 2022.</p>
+
+                    </div>
+    
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="text-center text-md-start">
+
+                        <img src="galeria-6.png" class="galeria-img">
+                        <p class="mb-5">Conversa com ex-alunos.</p>
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </section> <!--FIm Seção galeria-->
+
+
+    <section id="contato"><!--inicio seção contato-->
+
+        <div class="container">
+            
+            <h2>Ainda com dúvidas em relação ao cursinho? Entre em contato!</h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-5 align-self-center">
+
+                    <div>
+                        <p>Email:</p>
+                        <p>Atlas@gmail.com</p>
+                    </div>
+
+                    <div class="my-5">
+                        <p>Endereço:</p>
+                        <p>Unesp: Rua Cristóvão Colombo, 2265 - Jardim Nazareth.</p>
+                    </div>
+
+                    <div>
+                        <p>WhatsApp:</p>
+                        <p>17 99610-1163</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5 align-self-center text-center">
+
+                    <iframe class="tamanho-gps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.1650453918246!2d-49.36277452475007!3d-20.78460978080432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bc52cef193eee7%3A0xcc4133d50bcf8239!2sIbilce%20-%20Instituto%20de%20Bioci%C3%AAncias%2C%20Letras%20e%20Ci%C3%AAncias%20Exatas%20-%20C%C3%A2mpus%20de%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20Unesp!5e0!3m2!1spt-BR!2sbr!4v1718379913172!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin"></iframe>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!--Fim seção contato-->
+
+
+    <section id="inscreva"> <!--inicio seção inscreva-se-->
+
+        <div class="container">
+
+
+            <h2>Interessado?</h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 text-center">
+                    
+                    <a  href="https://forms.gle/5zkyisvY5a5HEAWJ7" target="_blank" type="button" class="btn btn-primary">Inscreva-se</a>
+                    
+                </div>
+
+            </div>
+        
+        </div>
+
+    </section> <!--Fim seção inscreva-se-->
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                    <div class="col-12 col-md-8 col-lg-9 my-4 align-self-center text-center text-md-start">
+                        <img src="logo-rodape.png" class="logo-rodape">
+                        <img src="ibilce.png" class="ibilce">
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3 my-4 ms-auto align-self-center text-center text-md-start">
+                        <div class="ms-auto align-self-center">
+
+                          <a href="https://www.instagram.com/cursinhoatlas/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="img-redes-sociais" viewBox="0 0 16 16" >
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                          </a> 
+                          
+                          <a href="https://api.whatsapp.com/message/EZK2QXW2CWTJI1?autoload=1&app_absent=0" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="img-redes-sociais" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                          </a>  
+
+                          <a href="https://api.whatsapp.com/message/EZK2QXW2CWTJI1?autoload=1&app_absent=0" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="img-redes-sociais" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                            </svg>
+                          </a>  
+                        
+                        </div>
+                    </div>
+                
+
+            
+            </div>
+
+        </div>
+
+    </footer>
+
     
     <script src="bootstrap.min.js"></script>
 
