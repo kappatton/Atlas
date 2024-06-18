@@ -14,12 +14,12 @@
 
 /*Estilizando texto*/
 p{
-    font-family: 'Ovo';
+    font-family: 'Ovo', 'Roboto Condensed';
     font-size: 20px;
 }
 
 h2{
-    font-family: 'Poet';
+    font-family: 'Poet', Impact, 'Arial Narrow Bold';
     margin-bottom: 90px;
     text-align: center;
 }
@@ -29,7 +29,7 @@ h2{
 }
 
 h3{
-    font-family: 'Ovo';
+    font-family: 'Ovo', 'Roboto Condensed';
     font-size: 25px;
     font-weight: bold;
 }
@@ -122,6 +122,7 @@ nav, footer{
     color: #000;
     font-size: 50px;
 }
+
 /*FIm seção equipe*/
 
 
@@ -215,10 +216,6 @@ footer a{
 /*Media queries*/
 
 @media (max-width:575.98px){
-    body{
-        background-color: red;
-    }
-
     .logo{
         margin-right: 0px;
     }
@@ -290,10 +287,6 @@ footer a{
 }
 
 @media (min-width:576px) and (max-width:767.98px){
-    body{
-        background: #f23333;
-    }
-
     .sobre-conteudo{
         margin-right: 0;
         margin-left: 0;
@@ -336,9 +329,6 @@ footer a{
 }
 
 @media (min-width:768px) and (max-width: 991.98px){
-    body{
-        background: #0000ff;
-    }
     .nav-texto{
         font-size: 11px;  
     }
@@ -409,10 +399,6 @@ footer a{
 }
 
 @media (min-width:992px) and (max-width: 1199.98px){
-    body{
-        background: #00ff00;
-    }
-
     .nav-texto{
         font-size: 14px;  
     }
@@ -470,9 +456,6 @@ footer a{
 }
 
 @media (min-width:1200px) and (max-width: 1399.98px) {
-    body{
-        background: #ffff00;
-    }
     .nav-texto{
         font-size: 16px;
         margin-right:3px ;   
@@ -507,3 +490,4 @@ footer a{
     }
     
 }
+
