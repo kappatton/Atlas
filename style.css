@@ -184,6 +184,8 @@ nav, footer{
     border-radius: 50px;
 }
 
+
+
 /*Inicio rodapé*/
 footer a{
     text-decoration: none;
@@ -290,6 +292,9 @@ footer a{
         width: 30px;
         margin-left: 10px;
     }   
+
+
+
 
 }
 
@@ -508,4 +513,6 @@ footer a{
         height: 200px;
     }
     
+}
+
 }
