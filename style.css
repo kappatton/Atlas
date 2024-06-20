@@ -69,7 +69,7 @@ nav, footer{
 
 
 /*Margin padrão entre seções*/
-#equipe,#equipe2, #aprovados, #galeria, #contato, #inscreva, footer{
+#equipe, #equipe2, #aprovados, #galeria, #contato, #inscreva, footer{
     margin-top: 200px;
 }
 
@@ -98,6 +98,9 @@ nav, footer{
 
 
 /*Inicio seção equipe*/
+#equipe{
+    height: 600px;
+}
 
 .conteudo-equipe{
     margin-right: 17px;
@@ -225,6 +228,10 @@ footer a{
         margin-left: 0;
     }
 
+    #equipe2{
+        height: 450px;
+    }
+
     .conteudo-equipe{
         margin-right: 15px;
         width: 100px;
@@ -292,6 +299,10 @@ footer a{
         margin-left: 0;
     }
 
+    #equipe2{
+        height: 480px;
+    }
+
     .conteudo-equipe{
         margin-right: 10px;
         width: 125px;
@@ -349,6 +360,10 @@ footer a{
     .sobre-conteudo{
         margin-right: 0;
         margin-left: 0;
+    }
+
+    #equipe2{
+        height: 460px;
     }
 
     .conteudo-equipe{
@@ -415,6 +430,10 @@ footer a{
     .sobre-conteudo{
         margin-right: 0;
         margin-left: 0;
+    }
+
+    #equipe{
+        height: 480px;
     }
 
     .conteudo-equipe{
@@ -490,4 +509,3 @@ footer a{
     }
     
 }
-
