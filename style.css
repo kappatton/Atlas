@@ -69,7 +69,7 @@ nav, footer{
 
 
 /*Margin padrão entre seções*/
-#equipe, #equipe2, #aprovados, #galeria, #contato, #inscreva, footer{
+#sobre, #equipe, #equipe2, #aprovados, #galeria, #contato, #inscreva, footer{
     margin-top: 200px;
 }
 
@@ -77,10 +77,6 @@ nav, footer{
 
 
 /*inicio seção sobre*/
-#sobre{
-    margin-top: 200px;
-}
-
 #sobre p{
     text-align: justify;
 }
